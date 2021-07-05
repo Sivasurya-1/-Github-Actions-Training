@@ -1,0 +1,10 @@
+name: practice Github Action workflow
+
+on: [push]
+
+jobs:
+  practice-github-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: printing steps name
+        run: echo "Welcome to Practice git hub"
