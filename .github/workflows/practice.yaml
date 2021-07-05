@@ -8,3 +8,14 @@ jobs:
     steps:
       - name: printing steps name
         run: echo "Welcome to Practice git hub"
+  checkout-github-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check directory & print in-build enviroinment values
+        run : |
+          pwd
+          ls -lrt
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "${{github.token}}"
